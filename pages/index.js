@@ -11,10 +11,10 @@ import  'bulma/css/bulma.css'
       <Head>
         <title> BLOCKCHAIN WAR</title>
         <meta name="description" content="Blockchain War ICO Web application" />
+         <link rel="shortcut icon" href="/bcw.jpg" type="image/x-icon" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet" />
-         <Link rel="shortcut icon" href="/bcw.jpg" type="image/x-icon" />
-      </Head>
 
+      </Head>
         <nav className={`  navbar`} >
           <div className='navbar-start'>
                       <Image src='/bcw.jpg'  width={200} height={200} alt='img'  />
@@ -149,7 +149,7 @@ import  'bulma/css/bulma.css'
             <Image src="/vercel.svg" alt="Vercel Logo" width={42} height={16} /> 
           </span>
            <span className='pr-4 pl-4'>
-          <Image src="/1.png" width={72} height={10}/><br/>
+          <Image src="/1.png" width={72} height={10} alt="lucidity"/><br/>
           </span>
         </a>
       </footer>
