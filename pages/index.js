@@ -15,24 +15,24 @@ import  'bulma/css/bulma.css'
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet" />
 
       </Head>
-        <nav className={`  navbar`} >
+        <nav className={` navbar`} >
           <div className='navbar-start'>
-                      <Image src='/bcw.jpg'  width={200} height={200} alt='img'  />
+                      <Image src='/bcw.jpg'  width={200} height={200} alt='img' className={styles.logo}  />
           </div>
         </nav>
       <main className={styles.main}>
-        <section  id="heading is-responsive has-text-left" className={` ${styles.hd}`}>
+        <section  id="heading" className={` ${styles.hd}`}>
           <div className={styles.meta}>
-              <p className='pl-4'><b className={styles.h11}>BLOCKCHAIN-WAR ($BCW) </b > <br/> The first token ever built on the Binance Ecosystem with a fair launch,  where all investors have equal ground. <br/></p>
-              <p className='pl-4'> We combined the Metaverse, NFTs, SocialFi and Gamefi in one place. <br/> We are bringing virtualization into reality.</p>
+              <p className={styles.mp}><b className={styles.h11}>BLOCKCHAIN-WAR ($BCW) </b > <br/> The first token ever built on the Binance Ecosystem with a fair launch,  where all investors have equal ground. <br/></p>
+              <p className={styles.mp}> We combined the Metaverse, NFTs, SocialFi and Gamefi in one place. <br/> We are bringing virtualization into reality.</p>
           </div>
           </section>   
 
-          <section id='explanation' className={`${styles.h}container mt-4 mb-4`}>
+          <section id='explanation' className={`container mt-4 mb-4`}>
                     <div className={` ${styles.h}  pt-4 pb-4 has-text-centered`}>
-                        <b className={styles.h1}> Market Cap  <p className={styles.pt}> $5000  </p> </b>
+                        <b className={styles.h1} > Market Cap  <p className={styles.pt}> $5000  </p> </b>
                         <b className={styles.h1}> Total Supply <p className={styles.pt}> 500M</p></b>
-                        <b  className={styles.h1}>  <button className='button is-primary is-large'> BUY BCW </button>  </b>
+                        <b  className={styles.h1}>  <button className='button is-primary is-large is-responsive'> BUY BCW </button>  </b>
                     </div>
            </section>
 
@@ -96,34 +96,52 @@ import  'bulma/css/bulma.css'
 
         <section id="roadmap" className={`${styles.road} container mt-4 mb-4 has-text-centered is-responsive`}>
           <h1 className={styles.h1}> Road map </h1>
-                        <div className='box'>
-                          
-              <p className='box'> <b> Phase 1 (2022-2023)</b> <br/>
-              Creating and laying the foundation of our communities. <br/>
-              Fair launch on pancakeswap
-              100 holders
-              First marketing campaings, buybacks,  burn and timelock.
-              </p>
+                        <div className={styles.cards}>
+                   <div className={styles.card}>
+                   <div className='card-content pt-4'>
+                            <b> Phase 1 (2022-2023)</b> 
+                             <p > 
+                                  Creating and laying the foundation of our communities. 
+                                    Fair launch on pancakeswap 100 holders First marketing campaings, buybacks,  burn and timelock.
+                              </p>
+                    </div>
+                    </div>
+                    
+                <div className={styles.card}>
+                <div className='card-content pt-4'>
+                           <b> Phase 2 (2023-2024) </b> 
+                             <p> 
+                                  Apply for Coinmarketcap, Coingecko and dextools. 
+                                  Engaging crypto influencers
+                                  300 holders
+                                  Developing the first utility
+                              </p>
+                  </div>
+                  </div>      
 
-              <p className='box'> <b> Phase 2 (2023-2024) </b> <br/>
-              Apply for Coinmarketcap, Coingecko and dextools. <br/>
-              Engaging crypto influencers
-              300 holders
-              Developing the first utility
-              </p>
-
-               <p className='box'> <b> PHASE 3 (2024-2030) </b> <br/>
-              Expanding our marketing campaigns
-              Introduce our first utility to the community
-              Bridging all our utilities together 
-              50000 holders
-                </p>
-
-              <p className='box'> <b> PHASE 4 (2030- ♾️) </b><br/>
-              Fully integrating the metaverse into reality.
-              </p>
           </div>
-
+            <div className={styles.cards}>
+              <div className={styles.card}>
+                 <div className='card-content pt-4'>
+                                 <b> PHASE 3 (2024-2030) </b> 
+                              <p > 
+                                  Expanding our marketing campaigns
+                                  Introduce our first utility to the community
+                                  Bridging all our utilities together 
+                                  50000 holders
+                              </p>
+                </div>
+                </div>
+           
+             <div className={styles.card}>
+               <div className='card-content pt-4'>
+                          <b> PHASE 4 (2030- ♾️) </b>     
+                               <p> 
+                                    Fully integrating the metaverse into reality.
+                               </p>
+            </div>
+            </div>
+            </div>
           </section> 
           
         <section id="tokenmics" className={`${styles.token} container mt-4 mb-4 has-text-centered `}>

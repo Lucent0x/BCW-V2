@@ -117,6 +117,13 @@
 .tbody td{
   text-align: left;
 }
+
+.cards {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -187,7 +194,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: 40%;
 }
 
 .card:hover,
@@ -218,18 +225,30 @@
     width: 100%;
     flex-direction: column;
   }
+  .logo{
+    width: 100px;
+    height: 100px;
+  }
   .hd{
-    min-height: 30vh;
+    min-height: 20vh;
     font-size: 20px;
-    background-size: contain;
-    overflow-y: auto;
+    background-size: cover;
+    background-position: center;
   }
   .meta{
     margin-top: 4vh;
     padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .h{
+    display: flex;
+    justify-content: space-evenly;
   }
   .h1{
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .meta b{
     font-size: 1em;
@@ -258,8 +277,22 @@
                   width: 97%;
                 }
 
+              .tr{
+                font-size: 17px;
+              }
+
                 .tkn{
                   min-height: 20vh;
+                }
+                .cards{
+                  flex-direction: column;
+                }
+                .card{
+                  width: 98%;
+                }
+                .meta{
+                  overflow-y: auto;
+                  font-size: 17px;
                 }
 }
 
