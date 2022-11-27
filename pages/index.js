@@ -19,16 +19,13 @@ import  'bulma/css/bulma.css'
           <div className='navbar-start'>
                       <Image src='/bcw.jpg'  width={200} height={200} alt='img'  />
           </div>
-          <div className='navbar-end pr-4 pt-4 mt-4'>
-            <p className={styles.title}>
-                    BLOCKCHAIN WAR.
-                </p>
-          </div>
         </nav>
       <main className={styles.main}>
-        <section  id="heading is-responsive has-text-left" className={` ${styles.hd}`}> 
-        <p><b >BLOCKCHAIN-WAR ( $BCW)</b > is the first token ever built on the Binance Ecosystem with a fair launch,  where all investors have equal ground. <br/></p>
-        <p> We combined the Metaverse, NFTs, SocialFi and Gamefi in one place. <br/> We are bringing virtualization into reality.</p>
+        <section  id="heading is-responsive has-text-left" className={` ${styles.hd}`}>
+          <div className={styles.meta}>
+              <p className='pl-4'><b className={styles.h11}>BLOCKCHAIN-WAR ($BCW) </b > <br/> The first token ever built on the Binance Ecosystem with a fair launch,  where all investors have equal ground. <br/></p>
+              <p className='pl-4'> We combined the Metaverse, NFTs, SocialFi and Gamefi in one place. <br/> We are bringing virtualization into reality.</p>
+          </div>
           </section>   
 
           <section id='explanation' className={`${styles.h}container mt-4 mb-4`}>
@@ -92,7 +89,7 @@ import  'bulma/css/bulma.css'
         <section id="community" className={  `${styles.community} container mt-4 mb-4 has-text-centered` }>
            <div className=''>
                    <Link href='https://t.me/blockchain_war'>  
-                   <button className='button is-large is-link'> JOIN OUR TELEGRAM COMMUNITY</button>
+                   <button className='button is-large is-link is-responsive'> JOIN OUR TELEGRAM COMMUNITY</button>
                    </Link>
            </div>
           </section> 
@@ -149,7 +146,7 @@ import  'bulma/css/bulma.css'
             <Image src="/vercel.svg" alt="Vercel Logo" width={42} height={16} /> 
           </span>
            <span className='pr-4 pl-4'>
-          <Image src="/1.png" width={72} height={10} alt="lucidity"/><br/>
+          <Image src="/1.png" width={49} height={10} alt="lucidity"/><br/>
           </span>
         </a>
       </footer>
