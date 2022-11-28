@@ -328,23 +328,35 @@ width: 100vw;
                 }
                 .cards{
                   flex-direction: column;
+                  font-size: 17px;
                 }
                 .card{
-                  width: 94%;
+                  width: 94.9%;
                   margin: 0.7rem;
+                  padding: .8em;
                 }
                 .meta{
                   overflow-y: auto;
                   font-size: 17px;
                 }
                 .footer{
-                  padding: 0 0.7em;
+                  padding: 0 0.4em;
                   font-size: 17px;
                 }
                 .footer  .logo {
                 padding-top: 34px;
                 padding-left: 10px;
               }
+              .socials{
+                padding: 10px 0px 0px 10px;
+              }
+              .socials .dev {
+                      color: white;
+                      padding: 10px 10px 10px 7px
+                 }
+                 .socials .links{
+                   width: 100px;
+                 }
 }
 
 @media (prefers-color-scheme: dark) {

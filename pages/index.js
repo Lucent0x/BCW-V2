@@ -173,7 +173,7 @@ const Home = () => {
            From  <n className='n'> LUCIDIT</n><m className='m'>Y</m> | &copy; 2022 
           </div>
           <div className={styles.links}>
-              <p><Link href=''> Discord Server </Link> </p>
+              <p><Link href=''> Discord  </Link> </p>
               <p><Link href=''> Facebook</Link></p>
               <p><Link href=''> Telegram </Link></p>
               <p><Link href=''> Twitter  </Link></p>
