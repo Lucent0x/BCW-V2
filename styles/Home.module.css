@@ -135,7 +135,7 @@ width: 100vw;
 .footer {
   display: flex;
   flex: 1;
-  padding: 0.1rem 2rem;
+  padding: 0rem 2rem;
   border-top: 1px solid #041872;
   justify-content: space-between;
   align-items: center;
@@ -152,19 +152,30 @@ width: 100vw;
 .socials{
   width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  border: 1px solid rebeccapurple;
+  justify-content: space-between;
+  flex-direction: row;
   padding: 10px 40px 10px 10px;
   background-color: #111;
 }
-
-.socials ul li a{
-  padding: 4px;
+.socials .dev{
+  color: white;
+  padding: 10px 10px 10px 20px
 }
 
-.socials p a:hover{
-  color: whitesmoke;
+.socials .dev n{
+  font-family: 'neoneon'
+}
+
+.socials .dev m{
+  font-family: 'Monoton';
+}
+.links{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.links p a:hover{
+  color: whiteSmoke;
 }
 .title a {
   color: #0070f3;
