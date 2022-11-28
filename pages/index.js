@@ -154,19 +154,28 @@ import  'bulma/css/bulma.css'
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://github.com/LucidityShedrack"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={42} height={16} /> 
-          </span>
-           <span className='pr-4 pl-4'>
-          <Image src="/1.png" width={49} height={10} alt="lucidity"/><br/>
-          </span>
-        </a>
+        <div className={styles.sponsors}>
+          <a
+            href="https://github.com/LucidityShedrack"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          Powered by{' '}
+            <span className={`${styles.logo}`}>
+              <Image src="/vercel.svg" alt="Vercel Logo" width={42} height={16} /> 
+            </span>
+            <span className='pr-4 pl-4 pt-2'>
+            <Image src="/1.png" width={49} height={10} alt="lucidity"/><br/>
+            </span>
+          </a>
+        </div>
+        <div className={styles.socials}>
+            <p><Link href=''> Discord Server </Link> </p>
+            <p><Link href=''> Facebook</Link></p>
+            <p><Link href=''> Telegram </Link></p>
+            <p><Link href=''> Twitter  </Link></p>
+
+        </div>
       </footer>
     </div>
   )
