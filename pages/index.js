@@ -3,130 +3,95 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'bulma/css/bulma.css'
+import  {TbBrandMeta} from 'react-icons/Tb'
+import {GiMonkey} from 'react-icons/gi'
+import {TbSocial } from 'react-icons/tb'
+import {IoLogoGameControllerB} from 'react-icons/io'
+import {HiOutlinePresentationChartLine} from 'react-icons/hi'
+import {HiOutlineSpeakerphone} from 'react-icons/hi'
+import {FaInfinity} from 'react-icons/fa'
+import {AiFillCaretLeft} from 'react-icons/ai'
 
-
-const Home = () => {
+const Home = () => { 
   return (
     <div className={styles.container}>
       <Head>
         <title> BLOCKCHAIN WAR</title>
         <meta name="description" content="Blockchain War ICO Web application" />
         <link rel="shortcut icon" href="/bcw.jpg" type="image/x-icon" />
-        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Monoton" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&amp;family=Monoton&amp;family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,400;1,500;1,600&amp;display=swap" rel="stylesheet"></link>
         <link href="https://fonts.cdnfonts.com/css/neoneon" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet" />
-
+                
       </Head>
-      <nav className={` navbar`} >
+      <nav className={` navbar ${styles.nav}`} >
         <div className='navbar-start'>
           <Image src='/bcw.jpg' width={200} height={200} alt='img' className={styles.logo} />
         </div>
+        <div className='navbar-end'>
+            <ul className={styles.ul1}>
+              <li><Link href='#about' >About </Link></li>
+              <li><Link href='#whitePaper' >White Paper </Link></li>
+              <li><Link href='#roadMap'  >Road Map </Link></li>
+              <li><Link href='#tokenomics'  >Tokenomics </Link></li>
+            </ul>
+        </div>
       </nav>
       <main className={styles.main}>
-        <section id="heading" className={` ${styles.hd}`}>
+        <section id="about" className={` ${styles.hd}`}>
           <div className={styles.meta}>
-            <p className={styles.mp}><b className={styles.h11}>BLOCKCHAIN-WAR ($BCW) </b > <br /> The first token ever built on the Binance Ecosystem with a fair launch,  where all investors have equal ground. <br /></p>
-            <p className={styles.mp}> We combined the Metaverse, NFTs, SocialFi and Gamefi in one place. <br /> We are bringing virtualization into reality.</p>
+            <p className={styles.mp}><b className={styles.h11}>BLOCKCHAIN-WAR  <br />  ($BCW) </b > <br /> 
+            The first token ever built on the Binance  Ecosystem with a fair launch,  where all investors have equal ground. </p>
+            <p className={styles.buy}> 
+              <b>  <button className='button is-large is-responsive'> Buy BCW </button>  </b>
+            </p>
+            </div>
+        </section>
+        <div className={styles.iconz}>
+        <p> <span><GiMonkey /> NFTs  </span> <span className={styles.icon}> <TbBrandMeta />    Metaverse </span> <br/>
+            <span> <TbSocial /> SocialFi</span> <span className={styles.icon}><IoLogoGameControllerB /> GameFi</span> </p>
           </div>
+
+        <section id='explanation' className={` ${styles.explan}` }>
+          <div className={styles.info2}>
+             <h1 className={styles.h1}>We are bringing <br/> virtualization into  <br/> reality. </h1> 
+          <p className={styles.explanP}>
+            We combined the Metaverse, NFTs, SocialFi and GameFi in one place.
+          </p> 
+        </div>
         </section>
 
-        <section id='explanation' className={`container mt-4 mb-4`}>
-          <div className={` ${styles.h}  pt-4 pb-4 has-text-centered`}>
-            <b className={styles.h1} > Market Cap  <p className={styles.pt}> $5000  </p> </b>
-            <b className={styles.h1}> Total Supply <p className={styles.pt}> 500M</p></b>
-            <b className={styles.h1}>  <button className='button is-primary is-large is-responsive'> BUY BCW </button>  </b>
-          </div>
-        </section>
-
-        <section id="whitePaper" className={`container mt-4 mb-4 has-text-centered `}>
-          <h1 className={` ${styles.h1} mt-4 mb-4`}> White Paper </h1>
-          <div className={styles.white} >
-            <table className={styles.table} >
-              <tbody className={styles.tbody} >
-
-                <tr className={`${styles.blued} ${styles.tr}  has-text-left `}>
-                  <th> Project Name </th>
-                  <td><p>  BLOCKCHAIN WAR TOKEN </p></td>
-                </tr>
-                <tr className={` ${styles.tr}`}>
-                  <th> Softcap</th>
-                  <td><p> USD 5 thousand </p></td>
-                </tr>
-                <tr className={`${styles.blued} ${styles.tr}`}>
-                  <th> Hardcap</th>
-                  <td><p> USD 50 Million </p></td>
-                </tr>
-                <tr className={`${styles.tr}`}>
-                  <th> Pre-ICO</th>
-                  <td><p> Null</p></td>
-                </tr>
-                <tr className={`${styles.blued} ${styles.tr}`}>
-                  <th> ICO Runtime </th>
-                  <td><p> November, 2022 </p></td>
-                </tr>
-                <tr className={` ${styles.tr}`}>
-                  <th> Token Name </th>
-                  <td><p> BLOCKCHAIN WAR </p></td>
-                </tr>
-                <tr className={`${styles.blued} ${styles.tr}`}>
-                  <th> Price per BCW  </th>
-                  <td><p> USD 0 </p></td>
-                </tr>
-                <tr className={` ${styles.tr}`}>
-                  <th> Total no. of tokens </th>
-                  <td><p> 500, 000, 000</p></td>
-                </tr>
-                <tr className={`${styles.blued} ${styles.tr}`}>
-                  <th> Total tokens for sale  </th>
-                  <td><p> 60%</p></td>
-                </tr>
-
-
-
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section id="community" className={`${styles.community} container mt-4 mb-4 has-text-centered`}>
-          <div className=''>
-            <Link href='https://t.me/blockchain_war'>
-              <button className='button is-large is-link is-responsive'> JOIN OUR TELEGRAM COMMUNITY</button>
-            </Link>
-          </div>
-        </section>
-
-        <section id="roadmap" className={`${styles.road} container mt-4 mb-4 has-text-centered is-responsive`}>
-          <h1 className={styles.h1}> Road map </h1>
-          <div className={styles.cards}>
+        <section id="roadMap" className={`${styles.road} container mt-4 mb-4 has-text-centered is-responsive`}>
+          <h1 className={styles.h1}> ROAD MAP </h1>
+          <div className={styles.cards } >
             <div className={styles.card}>
               <div className='card-content pt-4'>
-                <b> Phase 1 (2022-2023)</b>
                 <p >
+                <b> Phase 1 (2022-2023)</b> <br/>
                   Creating and laying the foundation of our communities.
                   Fair launch on pancakeswap 100 holders First marketing campaings, buybacks,  burn and timelock.
                 </p>
               </div>
             </div>
 
-            <div className={styles.card}>
-              <div className='card-content pt-4'>
-                <b> Phase 2 (2023-2024) </b>
-                <p>
-                  Apply for Coinmarketcap, Coingecko and dextools.
+            <div className={`${styles.card}`}>
+              <div className={ ` ${styles.card2} card-content pt-4 `}>
+                
+                <p><b> Phase 2 (2023-2024) </b> <br/>
+                  Apply for Coinmarketcap, Coingecko  and dextools.
                   Engaging crypto influencers
                   300 holders
                   Developing the first utility
                 </p>
               </div>
             </div>
-
-          </div>
-          <div className={styles.cards}>
+            
             <div className={styles.card}>
               <div className='card-content pt-4'>
-                <b> PHASE 3 (2024-2030) </b>
-                <p >
+                
+                <p><b> PHASE 3 (2024-2030) </b> <br/>
                   Expanding our marketing campaigns
                   Introduce our first utility to the community
                   Bridging all our utilities together
@@ -136,9 +101,9 @@ const Home = () => {
             </div>
 
             <div className={styles.card}>
-              <div className='card-content pt-4'>
-                <b> PHASE 4 (2030- ♾️) </b>
-                <p>
+              <div className={ ` ${styles.card4} card-content pt-4 `}>
+                
+                <p><b> PHASE 4 ( 2030 - <FaInfinity  className='pt-1' /> ) </b> <br/>
                   Fully integrating the metaverse into reality.
                 </p>
               </div>
@@ -146,10 +111,30 @@ const Home = () => {
           </div>
         </section>
 
-        <section id="tokenmics" className={`${styles.token} container mt-4 mb-4 has-text-centered `}>
+        <section id="tokenomics" className={`${styles.token} container mt-4 mb-4 has-text-left pl-5 `}>
           <h1 className={styles.h1}> Tokenomics </h1>
           <div className={styles.tkn}>
-
+              <div >
+                 <p className={styles.p1}>
+                <span><HiOutlinePresentationChartLine className={styles.round1} /> </span>
+                Project development  
+                <span className={styles.arr1} > <AiFillCaretLeft /> 60%</span> 
+                </p>
+                </div>
+              <div >
+                <p className={styles.p2}>
+                 <span><HiOutlineSpeakerphone className={styles.round2} /></span>
+                  Marketing   
+                  <span className={styles.arr2} > <AiFillCaretLeft />30%</span>
+                  </p>
+                   </div>
+              <div>
+                 <p className={styles.p3}>
+                <span> <TbSocial   className={styles.round3}/></span>
+                 Dev Team 
+                  <span className={styles.arr3}  > <AiFillCaretLeft /> 10%</span>
+                  </p>
+                  </div>
           </div>
         </section>
 
@@ -174,9 +159,10 @@ const Home = () => {
           </div>
           <div className={styles.links}>
               <p><Link href=''> Discord  </Link> </p>
-              <p><Link href=''> Facebook</Link></p>
+              <p><Link href=''> Medium </Link></p>
               <p><Link href=''> Telegram </Link></p>
               <p><Link href=''> Twitter  </Link></p>
+              <p><Link href='#about'> Back to the top </Link></p>
         </div>
         </div>
       </footer>

@@ -4,7 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/Components
+/lib
+/Model
+/pages/api
+/pages/users.js
 # testing
 /coverage
 

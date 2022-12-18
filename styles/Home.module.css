@@ -2,8 +2,10 @@
   padding: 0 0rem;
    display: flex;
    flex-direction: column;
-   font-family: 'Poppins';
+  font-family: 'Prompt', sans-serif;
    font-size: 20px;
+   transition: all;
+   transition-duration: 3s;
 }
 
 .main {
@@ -16,7 +18,25 @@
   align-items: center;
 }
 .nav{
-  background: linear-gradient(to right top, aquamarine, rgba(0, 162, 255, 0.623));
+    font-family: 'Ubuntu', sans-serif;
+  align-items: center;
+}
+
+.ul1{
+  display: flex;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.ul1 li{
+  padding-left: 20px;
+  color: black;
+}
+.ul1 li a{
+  color: black;
+}
+.ul1 li a:hover{
+   border-bottom: 4px solid #5e2c2d;
+   border-radius: 4px;
 }
 .hd{
   font-size: 32px;
@@ -28,27 +48,110 @@
   flex-direction: column;
   justify-content: center;
   background: linear-gradient( to right top, aquamarine, rgba(0, 162, 255, 0.623)) ;
-  overflow-y: auto;
-  
-  background: url("../public/metaverse.jpg");
-    background-size: cover;
+  background: url("../public/vr.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
 }
 .meta{
-  margin-top: 40vh;
-  color: #eaeaea;
+  margin-top: 10vh;
+  color: #000;
+  margin-left: 10%;
 }
 .token{
   min-width: 100%;
 }
 
-.tkn{
-  background: url('../public/TKN.png');
-  background-size: fill;
+.mp{
+  font-size: 0.8em;
+  width: 53%;
+}
+
+.iconz{
+  width: 80%;
+  margin-bottom: 30vh;
+}
+.iconz p{
+   font-size: 25px;
+   width: 33%;
+}
+
+.iconz span:hover {
+  color: goldenrod;
+}
+.icon {
+  margin-left: 40px;
+  align-items: baseline;
+}
+.tkn {
+  background: url('../public/globe2.png');
+  background-size: contain;
   background-repeat: no-repeat;
   min-height: 55vh;
   min-width: 100%;
+  background-position: left;
+}
+
+.round1{
+  font-size: 20px;
+  border-radius: 50%;
+  background: linear-gradient(lightblue, rgb(4, 48, 241));
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+.arr1 {
+  color: rgb(4, 48, 241);
+}
+.round2 {
+  font-size: 20px;
+  border-radius: 50%;
+  background:linear-gradient( orange, orangered);
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+.arr2 {
+  color: orangered;
+}
+.round3 {
+  font-size: 20px;
+  border-radius: 50%;
+  background: orange;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}.arr3 {
+  color: yellowgreen;
+}
+.p1{
+  margin-left: -10%;
+}
+.p2{
+  margin-left: 10%;
+}
+.p3{
+  margin-left: 10%;
+}
+.p1, .p2, .p3 {
+    background: rgba(226, 226, 226, 0.1);
+    backdrop-filter: blur(2px);
+    padding: 2px 2px 0px 2px;
+    border-radius: 7px;
+}
+.tkn div{
+  display: flex;
+  justify-content: center;
+}
+.tkn div p{
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 220px;
+  padding-left: 5px;
+  color: black;
 }
 .community{
   background:  url('../public/telegram.png');
@@ -60,13 +163,60 @@
   flex-direction: column;
   justify-content: center;
 }
+.explan{
+  margin-bottom: 40vh;
+  background: url('../public/globe2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  min-height: 80vh;
+  width: 80%;
+}
+
+.info2 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+}
+.info2 h1{
+  display: flex;
+  justify-content: right;
+  text-align: left;
+  padding-right: 20px;
+  font-family: 'Ubuntu';
+}
+
+.explanP{
+  display: flex;
+  justify-content: right;
+  font-size: .8em;
+}
+.buy{
+  margin-top: 7vh;
+  margin-bottom: 15vh;
+  width: 100%;
+}
+.buy b button{
+  background: #8A180A;
+  color: white;
+  width: 300px;
+}
+.buy button:hover{
+  color: white;
+}
 .h {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
   padding: 20px 20px 20px 20px;
   min-width: 100vw;
   z-index: 200;
+  margin-top: 20px;
 }
 .img{
   width: 22px;
@@ -74,14 +224,14 @@
 .h1{
   font-weight: bolder;
   font-size: 2em;
+  font-family: 'Ubuntu';
 }
 .h11{
   word-spacing: 320px;
   font-weight: bolder;
     font-size: 2em;
-}
-.pt{
-   border-top: 1px solid gray;
+    color: black;
+    font-family: 'Ubuntu';
 }
 
 .table{
@@ -124,10 +274,25 @@ width: 100vw;
 .cards {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   padding-right: 20px;
 }
 
+.card p{
+  width: 42%;
+  font-size: 10px;
+}
+.card2  {
+  display: flex;
+ justify-content: right;
+ text-align: right;
+}
+.card4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 .white{
   display: flex;
   align-items: center;
@@ -140,6 +305,7 @@ width: 100vw;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  font-family: 'Poppins';
 }
 
 .footer a {
@@ -205,14 +371,6 @@ width: 100vw;
   font-size: 1.5rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
 .grid {
   display: flex;
@@ -228,17 +386,15 @@ width: 100vw;
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 40%;
+  width: 100%;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
   color: #0070f3;
-  border-color: #0070f3;
 }
 
 .card h2 {
@@ -268,19 +424,73 @@ width: 100vw;
     width: 100px;
     height: 100px;
   }
+  .ul1 {
+    margin-right: 1px;
+    justify-content: center;
+    align-items: center;
+  }
+  .ul1 li {
+    font-size: 17px;
+    padding-left: 7px;
+  }
   .hd{
-    min-height: 20vh;
+    min-height: 40vh;
     font-size: 20px;
-    background-size: cover;
     background-position: center;
+    width: 100vw;
   }
   .meta{
     margin-top: 4vh;
+    margin-left: 1%;
+    width: 90vw;
     padding: 10px 0px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .mp{
+    width: 90vw;
+    color: black;
+    text-shadow: 1px 1px whitesmoke;
+    font-size: 1em;
+  }
+  .mp b{
+    text-shadow: none;
+  }
+  .buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin-bottom: 2vh;
+  }
+  .buy b button {
+    width: 70vw;
+  }
+  .iconz{
+    width: 80vw;
+    margin-bottom: 4vh;
+  }
+  .iconz p {
+    width: 100%;
+    font-size: 1.1em;
+  }
+  .explan{
+    width: 90vw;
+    min-height: 40vh;
+    margin-bottom: 2vh;
+  }
+
+  .card p{
+    width: 100%;
+    font-size: 1em;
+  }
+  .card2, .card3, .card4 {
+    text-align: left;
+  }
+  .info2 h1{
+    padding-right: 1px;
   }
   .h{
     display: flex;
@@ -294,11 +504,11 @@ width: 100vw;
     word-spacing: normal;
   }
     .tkn {
-      background: url('../public//TKN.png');
+      background: url('../public/globe2.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      height: 20vh;
+      height: 59vh;
       min-width: 100%;
     }
         .community {
